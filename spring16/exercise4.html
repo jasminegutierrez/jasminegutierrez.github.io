@@ -4,40 +4,154 @@
 	  <meta charset="UTF-8">
       <title>Carl Sagan</title>
 	    <style type="text/css">
-			body {
-		  		background: #fff;
+      body {
+	  		background:#000;
 		  		background-image: url("images/space_bg.jpg");
 		  		background-repeat: repeat;
 		  		background-position: 0px 0px;
-	  		
-		  		font: 12px/2em Arial, Helvetica, sans-serif;
-		  		color: #FFF;
-	  			}
-			ol, ul, li {
-			  				margin: 0;
-			  				padding: 0;
-							}
-			a {
-				color: rgba(255, 255, 255, 1);
-				}
-			blockquote {
-				font-size:11px;
+	  		font: 12px/2em Arial, Helvetica, sans-serif;
+	  		}
+	  ol, ul, li {
+	  				margin: 0;
+	  				padding: 0;
+					}
+		a {
+			color: rgba(233, 233, 233, 1);
+			}
+		blockquote {
+			font-size:11px;
 		}
 		
-			h1 {
-				font-size:40px;
-				color: #FFF;
-		}
-      	</style>
-    </head>
- <body>
-      <h1 id="article-name" class="headline page-title">Carl Sagan</h1>
-      <a href="/exercise1.html">Early Life</a> | <a href="/exercise2.html">Education and Scientific Career</a> | <a href="/">Scientific Achievements</a> | <a href="">Scientific and Critical Thinking Advocacy</a> | <a href="">Death</a> | <a href="">Awards and Honors</a><hr/>
-      <img src="/images/<p><strong>Carl Edward Sagan</strong> (/ˈseɪɡən/; November 9, 1934 – December 20, 1996) was 	an American astronomer, cosmologist, astrophysicist, astrobiologist, author, science popularizer, and science communicator in astronomy and other natural sciences. His contributions were central to the discovery of the high surface temperatures of Venus. However, he is best known for his contributions to the scientific research of extraterrestrial life, including experimental demonstration of the production of amino acids from basic chemicals by radiation. Sagan assembled the first physical messages that were sent into space: the <a href="">Pioneer plaque</a> and the <a href="">Voyager Golden Record</a>, universal messages that could potentially be understood by any extraterrestrial intelligence that might find them.</p>
-      <h2 class="headline">Early Life</h2>
-      
-      
-      
-      
- </body>
+		html *, html *:before, html *:after {
+    box-sizing: border-box;
+}
+.container {
+    background: #fff;
+    background-image: url("images/space_bg.jpg");
+    background-repeat: repeat;
+	background-position: 0px 0px;
+    border: 1px solid #ccc;
+    padding: 25px;
+    margin: 25px;
+}
+.box {
+    background: #000;
+    color:#fff;
+    border: 3px dotted #fff;
+    padding: 5px;
+    width: 250px;
+    overflow:hidden;
+    height:400px;
+    text-align: left;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+		
+	#header {
+	    background-color:black;
+	    color:white;
+	    text-align:center;
+	    padding:5px;
+}
+
+	#nav {
+		margin: 0; 
+		padding: 5px 0 5px 0;
+		background: #000; 
+		width: 100%; 
+		text-align: right;
+		
+	}
+
+	#section {
+	    padding:10px; 
+	    background-color:#000;
+	    text-align:center;
+	    color:#fff;
+}
+	#footer {
+	    background-color:black;
+	    color:white;
+	    clear:both;
+	    text-align:center;
+	    padding:60px; 
+}
+
+
+</style>
+</head>
+ 	<body>
+	 	<div id="header">
+	 		<img src="http://i65.tinypic.com/2lub28m.jpg" width="50%">
+		</div>
+	
+		<div id="section">
+				<h1>experimenting with floats</h1>
+				
+			<div class="container clearfix">
+			    <div class="box float-left">
+			     	<img src="images/Carl_Sagan.jpg" width="250px">
+			    </div>
+			    
+			    <div class="box float-left">
+			       			        <p><em>"Science is not only compatible with spirituality; it is a profound source of spirituality. When we recognize our place in an immensity of light‐years and in the passage of ages, when we grasp the intricacy, beauty, and subtlety of life, then that soaring feeling, that sense of elation and humility combined, is surely spiritual. So are our emotions in the presence of great art or music or literature, or acts of exemplary selfless courage such as those of Mohandas Gandhi or Martin Luther King, Jr. The notion that science and spirituality are somehow mutually exclusive does a disservice to both.” </em></p>
+			    </div>
+			    <div class="box float-left">
+			     	<img src="images/cs_galaxy.gif" width="250px">
+			     	<p><em>“The universe is a pretty big place. If it's just us, seems like an awful waste of space.”</em> 
+					 	<br/> ― Carl Sagan, <strong>Contact</strong></p>
+			    </div>
+			    
+			</div>    
+			
+			<div class="container clearfix">
+			    <div class="box float-right">
+			        box 1
+			    </div>
+			    
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<div id="footer">
+			Copyright © Cosmos
+		</div>
+
+
+
+</body>
 </html>
