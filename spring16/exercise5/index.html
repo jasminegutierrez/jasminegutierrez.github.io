@@ -8,13 +8,28 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         
+        
+        <!-- Include the jQuery library (local or CDN) -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Include the plugin *after* the jQuery library -->
+<script src="bjqs.min.js"></script>
+
+<!-- Include the basic styles -->
+<link type="text/css" rel="Stylesheet" href="bjqs.css" />
+<link rel="stylesheet" href="../project2/js/unslider/dist/css/unslider.css">
+<link rel="stylesheet" href="../project2/js/unslider/dist/css/unslider-dots.css">
+
+
+        
     </head>
     <body>
 	    
         <div class="wrapper">
             <header class="header" id="header">
                 <div class="container">
-                    <img src="../images/formheader.jpg" alt="logo" id="logo" width="45%"/>
+                    <img src="images/formheader.jpg" alt="logo" id="logo" width="45%"/>
+                   
                 </div>
                
             </header>
@@ -47,7 +62,7 @@
                         
                         <div class="headline-img-column">
                             <figure>
-                                <img src="../images/cs_galaxy.gif" width="100%" />
+                                <img src="images/cs_galaxy.gif" width="100%" />
                                 <figcaption><em>There are far more galaxies than people.</em></figcaption>
                             </figure>
                         </div>
@@ -75,11 +90,13 @@
             <!-- start of section 2 -->
             <section class="section-column2">
                         <h2>Gallery</h2><hr/>
-                                <img src="../images/Sagan_Viking.jpg" width="100%">
-                                <p>Before the Viking launches in the mid-1970s, our knowledge of Mars was extremely limited. The team of scientists assembled for the Viking project had to figure out how to land and navigate a spacecraft on a planet with almost no prior knowledge of what the surface would be like. Prior to the Viking missions, the Soviets had tried to land spacecrafts on Mars, and although one of their crafts seems to have made it to the surface, it lost contact with Earth before landing and may have crashed.</p>
-                                <p>Tthe Viking project, however, was an amazing success. The Viking program, of which the lander was a part, gathered data and images about our nearest planetary neighbor that changed the way we see Mars. In fact, before Viking, scientists thought the Martian sky would be a deep blue, like our upper atmosphere, but early photos from Viking revealed Mars's salmon-colored sky for the first time.</p>
-           </section> <!-- end of section 2 -->
+                                                                
+							<img src="images/Sagan_Viking.jpg" width="100%">
+							<h3>Come visit the vast number of photographs lurking within the Carl Sagan Gallery here at Infinite Cosmos.</h3>
+							<p>Infinite Cosmos is a living, virtual memorial to the life and work of Dr. Carl Sagan. A collaboration amongst fans, this site intends to be a place where fans of Sagan can share memories, artwork and other thoughts inspired by the great scientist and communicator.</p>
 
+
+           </section> <!-- end of section 2 -->
 
 
 
@@ -99,5 +116,18 @@
                 </div>
             </footer>
         </div>
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="../project2/js/unslider/src/js/unslider.js"></script> <!-- but with the right path! -->
+	
+	
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="../project2/js/unslider/src/js/unslider.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.automatic-slider').unslider({
+autoplay: true 
+});
+	</script>
+	
     </body>
 </html>
