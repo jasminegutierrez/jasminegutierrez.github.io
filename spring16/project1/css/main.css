@@ -25,7 +25,77 @@ small {
     color: #000;
 }
 
+.headerimg {
+			position: absolute; 
+			left: 0px; 
+			top: 0px; 
+			width: 1300px;
+            height: 500px; 
+            overflow: hidden;
+}
 
+.about-title {
+	position: absolute;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Arvo', sans-serif;
+    width: 480px;
+    height: 120px;
+    top: 2px;
+    left: 80px;
+    padding: 100px;
+    text-align: left;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    }
+    
+ .about-title1 {
+	position: absolute;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    width: 480px;
+    height: 120px;
+    top: 100px;
+    left: -80px;
+    padding-left: 520px;
+    text-align: left;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #e64040;
+    }
+ .about-title2 {
+	position: absolute;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    width: 480px;
+    height: 120px;
+    top: 100px;
+    left: -80px;
+    padding-left: 520px;
+    text-align: left;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #e64040;
+    }
+
+ .about-title3 {
+	position: absolute;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    width: 480px;
+    height: 120px;
+    top: 100px;
+    left: -80px;
+    padding-left: 520px;
+    text-align: left;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #e64040;
+    }
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -122,6 +192,8 @@ strong {font: 23px 'Roboto', sans-serif;
 	font-weight:bold;
 	
 }
+
+
 /* 
  * Main Section
  */
